@@ -12,9 +12,9 @@
   <body>
     <header>
       <ul>
-        <li><a href="#">やまもんblog</a></li>
-        <li><a href="#">トップページ</a></li>
-        <li><a href="blogs/new">いまどうしてる？</a></li>
+        <li><%= link_to "トップページ",root_path %></li> 
+        <li><%= link_to "つぶやき一覧",blogs_path %></li>
+ <li><%= link_to "つぶやく",new_blog_path %></li> 
       </ul>
     </header>
     <%= yield %>
